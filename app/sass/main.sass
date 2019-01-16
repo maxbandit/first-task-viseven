@@ -1,0 +1,76 @@
+@import "fonts"
+@import "vars"
+@import "reset"
+
+body.popup
+	overflow: hidden
+	#popup
+		visibility: visible
+.container
+	max-width: 1200px
+	height: 100%
+	margin: 0 auto
+.main-header
+	border-bottom: 2px solid #f1f1f3
+.banner
+	width: 100%
+	height: 220px
+	background: url('../../img/header-bg.jpg') top center
+	background-size: cover
+	.container
+		position: relative
+		display: flex
+		align-items: center	
+.avatar
+	position: absolute
+	left: -28px
+.user-data
+	width: 576px
+	height: 100px
+	padding-left: 230px
+	border-radius: 80px
+	background-color: #fff
+	.name
+		font: 600 36px/1.7 Raleway
+		color: $dark-blue
+	.main-info
+		li
+			position: relative
+			display: inline-block
+			margin-right: 15px
+			padding: 0 33px 0 33px
+			font-size: 16px
+			line-height: 1.2
+			color: #969696
+			&:last-child
+				border: none
+			&:before
+				position: absolute
+				left: 0px
+		.item-1:before
+			content: url(../../img/icon-1.png)
+		.item-2:before
+			content: url(../../img/icon-2.png)
+		.item-3:before
+			content: url(../../img/icon-3.png)
+
+
+.main-navigation
+	height: 100px
+	ul
+		display: flex
+	a
+		display: block
+		padding: 0 80px
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 2px
+		font: 300 36px/100px BebasNeue
+		color: $dark-blue
+		&.active, &:hover
+			background-color: #f1f1f3
+			border-bottom: 2px solid $blue
+			transition: background-color .2s
+main
+	width: 100%
+	background-color: #f5fcff
